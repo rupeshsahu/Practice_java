@@ -6,7 +6,7 @@ public class MajorityElement {
 
 	public static void main(String[] args) {
 		
-		int arr[]={5,5,4,5,8,5,8,8,8,8};
+		int arr[]={5,5,5,5,8,5,8,5,8,8};
 		findMajority(arr);
 
 	}
@@ -20,7 +20,7 @@ public class MajorityElement {
             if (map.containsKey(arr[i])) 
             {
                     int count = map.get(arr[i]) +1;
-                    if (count > arr.length /3) 
+                    if (count > arr.length /2)
                     {
                         System.out.println("Majority found :- " + arr[i]);
                         return;

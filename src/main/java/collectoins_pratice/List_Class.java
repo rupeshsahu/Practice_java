@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Stack;
 import java.util.Vector;
 
-public class List {
+public class List_Class {
 
 	public static void main(String[] args) {
 		
