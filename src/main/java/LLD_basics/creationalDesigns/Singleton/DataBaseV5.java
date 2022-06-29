@@ -19,3 +19,23 @@ public class DataBaseV5 {
         return instance;
     }
 }
+
+
+   /* Cass A{
+
+        Private A(){}
+        Private static A a=null;
+        Public static A getInstance(){
+        if(a==null){
+        a= new a();
+        Return a;;
+        }
+
+
+        }
+
+        A a=A.getInstance();
+
+        a=A.getInstance();*/
+
+
