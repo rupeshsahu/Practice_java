@@ -17,10 +17,12 @@ public class prime {
     {
         int m=n/2;
         int flag=0;
-        if(n==1 || n==2){
+        if(n==2){
             //System.out.println(n+" is prime number");
             return true;
         }
+        if(n==1)
+            return  false;
         for (int i=2;i<=m;i++)
         {
             if(n%i==0)
