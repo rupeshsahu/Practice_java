@@ -8,7 +8,7 @@ public class CommonElementOfTwoArrays {
 
     public static void main(String[] args) {
         ArrayList al=new ArrayList<>();
-        int a[]={3,2,10,7,5,15,2};
+        int a[]={3,3,2,10,7,5,15,2};
         int b[]={3,3,3};
         //intersection of both arrays is{7,10,2}
         HashMap<Integer, Integer>hm =new HashMap<Integer, Integer>();
