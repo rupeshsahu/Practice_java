@@ -5,45 +5,60 @@ public class reverseSentenceOrderN {
         String str="My name is rupesh";
         char arr_char[]=str.toCharArray();
 
-        reverseWord(arr_char);
+//        reverseWord(str);
 
-        System.out.println(String.valueOf(arr_char));
+        System.out.println(reverseWord(str));
 
 
 
 
             }
 
-            public static void reverseWord(char []s){
-            reverse(s,0,s.length-1);
-            int st=0;
-            for(int i=0;i<s.length;i++){
-                if(s[i]==' '){
-                    reverse(s,st,i-1);
-                    st=i+1;
-                }
+            public static String reverseWord(String str){
+
+        char []ch=str.toCharArray();
+
+        reverseString(ch,0,str.length()-1);
+        int start=0;
+        int end=0;
+
+        for(int i=0;i<ch.length;i++){
+            if(ch[i]==' ') {
+                end = i - 1;
+                reverseString(ch, start, end);
+                start = i + 1;
+            }
+
+        }
+                 end=ch.length-1;
+                reverseString(ch, start, end);
+
+
+
+
+
+
+
+
+        return new String(ch);
+
+
 
             }
-            reverse(s,st,s.length-1);
-
-
-            }
 
 
 
 
 
-    public static void reverse(char arr[],int start,int end){
+    public static void reverseString(char[] ch,int start,int end){
 
+        //int start=0;
 
-        while(start<end)
-        {
-            char temp=arr[start];
-            arr[start]=arr[end];
-            arr[end]=temp;
-            start++;
+        for(int i=start;i<=end;i++){
+            char temp=ch[i];
+            ch[i]=ch[end];
+            ch[end]=temp;
             end--;
-
         }
 
     }
