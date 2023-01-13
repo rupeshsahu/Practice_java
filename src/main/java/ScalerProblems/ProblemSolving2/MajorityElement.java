@@ -8,8 +8,5 @@ public class MajorityElement {
 
     }
 
-    public static int majorityElement(final List<Integer> A) {
 
-        
-    }
 }
