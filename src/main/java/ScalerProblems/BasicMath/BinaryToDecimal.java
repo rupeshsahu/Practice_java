@@ -27,3 +27,7 @@ public class BinaryToDecimal {
 return result;
     }
 }
+
+
+
+
