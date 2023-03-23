@@ -20,6 +20,11 @@ public class MaxOfAllSubArrays {
 
 
 
+
+
+
+
+
 //        al1.add(1);
 //        al1.add(3);
 //        al1.add(7);
