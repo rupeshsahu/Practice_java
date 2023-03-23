@@ -9,6 +9,10 @@ public class BinaryToDecimal {
 
     }
 
+
+
+
+
     public static int binaryToDecimal(int a){
         int result=0;
         int pow=1;
