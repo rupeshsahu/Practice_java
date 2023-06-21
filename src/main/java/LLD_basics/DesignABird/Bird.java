@@ -8,6 +8,11 @@ public class Bird {
     private String colour;
     private String Name;
 
+
+    public Bird() {
+
+    }
+
     public void setType(String type) {
         this.type = type;
     }
