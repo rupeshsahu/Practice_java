@@ -1,6 +1,6 @@
 public class MethodAndConstructorRefeenceOperator {
 
-    public static void m1(){
+    public  void m1(){
 
         for (int i=0;i<10;i++){
             System.out.println(i);
@@ -9,9 +9,11 @@ public class MethodAndConstructorRefeenceOperator {
 // code Reusability is possible because of :: this operator. Systax:--->
 // static method--> classname::method name
     //instance method--> object reference:: method name
-    //
+    //in method reference args should be match.
+    //dont worry about return type
     public static void main(String[] args) {
-        Runnable r=MethodAndConstructorRefeenceOperator::m1;
+        MethodAndConstructorRefeenceOperator obj =new MethodAndConstructorRefeenceOperator();
+        Runnable r=obj::m1;
         Thread t =new Thread(r);
         t.start();
     }
