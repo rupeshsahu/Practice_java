@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MapAndFilter {
 
@@ -21,6 +22,7 @@ public class MapAndFilter {
         Consumer<Integer> c=i-> System.out.println(i);
         //list.stream().forEach(c);
         Integer a[]=list.stream().toArray(Integer[]::new);
+        List<Integer> list1= Stream.of(a).collect(Collectors.toList());
 
 
 
