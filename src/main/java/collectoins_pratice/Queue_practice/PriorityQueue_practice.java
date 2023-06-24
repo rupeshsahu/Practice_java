@@ -9,9 +9,9 @@ public class PriorityQueue_practice {
         q.add(12);
         q.add(16);
         q.add(54);
-       /* System.out.println(q.poll());
+        System.out.println(q.poll());
         System.out.println(q.peek());
-        System.out.println(q.remove());*/
+        System.out.println(q.remove());
         System.out.println(q);
         System.out.println(q.size());
     }
