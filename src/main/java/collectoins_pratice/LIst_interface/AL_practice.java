@@ -30,7 +30,7 @@ public class AL_practice {
      list= (ArrayList<Integer>) list.stream().filter(a->(Integer)a<5).collect(Collectors.toList());
         System.out.println(list);
       list.stream().forEachOrdered(System.out::println);
-      Collections.synchronizedList(list); // now list is synchronized.
+      Collections.synchronizedList(list); // now list is synchronized.Similarly we can get synchromized verision of Set and Map.
 
 
     }
