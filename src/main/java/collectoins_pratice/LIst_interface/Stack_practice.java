@@ -12,7 +12,7 @@ public class Stack_practice {
         stack.push("a1");
         stack.push("a2");
 
-        stack.push("a3   ");
+        stack.push("a3");
         stack.push("a4");
 
         stack.push("a5");
@@ -20,6 +20,7 @@ public class Stack_practice {
         stack.push("a6");
         System.out.println(stack.pop());
         System.out.println(stack);
+        System.out.println(stack.search("a2"));
 
 
 

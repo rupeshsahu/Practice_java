@@ -12,6 +12,7 @@ public class HashSet_practice {
         set.add("shubham");
         set.add("Deepesh");
         set.add("Pranjal");
+        set.add("Rupesh");
         System.out.println(set);
     }
 }

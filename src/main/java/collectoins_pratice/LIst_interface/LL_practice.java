@@ -17,6 +17,9 @@ public class LL_practice {
                 list
         );
 
+        /*using below Methods we can implement  Stack and queue
+        * using LInked list*/
+
         list.addFirst("addfirst");
         list.addLast("addlast");
         System.out.println(list);
