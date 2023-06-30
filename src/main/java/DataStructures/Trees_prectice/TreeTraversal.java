@@ -1,5 +1,6 @@
 package DataStructures.Trees_prectice;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -20,6 +21,7 @@ public class TreeTraversal {
 
         System.out.println("DFS of tree:-");
         traverseDFS(treeNode1);
+
 
     }
 

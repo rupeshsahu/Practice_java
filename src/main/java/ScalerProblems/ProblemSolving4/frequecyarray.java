@@ -14,7 +14,7 @@ public class frequecyarray {
             al.add(i);
         }
 
-        frequencyArray(A);
+        System.out.println(frequencyArray(A));
     }
 
     public static Map frequencyArray(int a[]){
