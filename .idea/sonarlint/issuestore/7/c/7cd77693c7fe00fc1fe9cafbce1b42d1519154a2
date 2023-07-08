@@ -1,0 +1,17 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(‰åä³
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(—å¿Ê
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÓÒ"
+K
+java:S1854	"6Remove this useless assignment to local variable "rm".(›Ì°	
+<
+java:S1481	"'Remove this unused "rm" local variable.(›Ì°	
+V	java:S125"<This block of commented-out lines of code should be removed.(ó³ ¯ÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ì¥š¶
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¢Î€’
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ëæ±ú
+N	java:S106"9Replace this use of System.out or System.err by a logger.(µÚòÏ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(«Ã žøÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(å°ˆðùÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(¸³‚¤

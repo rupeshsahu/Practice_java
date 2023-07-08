@@ -5,8 +5,8 @@ public class lambdaexpression {
 
     public static void main(String[] args) {
 
-        lambda l=(a,b)-> System.out.println(a*b);
-        l.m1(3,4);
+        lambda l= (a,b)-> {return (a*b);};
+        System.out.println(l.m1(5,3));
 
 
 
