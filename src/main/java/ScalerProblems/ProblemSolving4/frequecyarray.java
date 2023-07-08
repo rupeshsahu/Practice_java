@@ -21,21 +21,14 @@ public class frequecyarray {
 
 
         int arr[]=new int[10];
-        HashMap<Integer,Integer> hm=new HashMap<Integer,Integer>();
+        HashMap<Integer,Integer> frequencyMap=new HashMap<Integer,Integer>();
 
-        for(int i=0;i<a.length;i++) {
-            if (hm.containsKey(a[i])){
-                int count=hm.get(a[i]);
-                hm.put(a[i],++count);
-            }
-            else{
-                hm.put(a[i],1);
-            }
-
-        }
+       for(int i:arr){
+           frequencyMap.put(i,frequencyMap.getOrDefault(i,0)+1);
+       }
 
 
-        return hm;
+        return frequencyMap;
 
 
     }
