@@ -1,4 +1,4 @@
-import org.apache.log4j.Logger;
+
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -24,6 +24,7 @@ public class checkDevelopweClientIsRunning {
             BufferedInputStream bufInput = new BufferedInputStream(p.getInputStream());
             byte[] byteArr = new byte[1024];
             int length = 0;
+            String line;
             StringBuffer strInputBuf = new StringBuffer();
             while ((length = bufInput.read(byteArr, 0, byteArr.length)) != -1)
                 strInputBuf.append(new String(byteArr, 0, length));
