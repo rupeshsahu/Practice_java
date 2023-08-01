@@ -1,13 +1,10 @@
 package ScalerProblems.ProblemSolving5;
 
 public class testTest {
+    int i=10;
     public static void main(String[] args) {
-        String str="RupeshSahu";
-
-
-        System.out.println(14>>1);
-        System.out.println(14);
-        System.out.println(14<<1);
+        testTest test=new testTest();
+        System.out.println(test.i);
 
     }
 }

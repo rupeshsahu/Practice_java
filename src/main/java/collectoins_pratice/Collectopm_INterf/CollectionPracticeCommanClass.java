@@ -9,5 +9,6 @@ public class CollectionPracticeCommanClass {
         Collection<Integer> c= new ArrayList<>();
         c.removeIf(i->i<2);
 
+
     }
 }

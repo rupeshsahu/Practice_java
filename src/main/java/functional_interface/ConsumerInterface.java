@@ -1,5 +1,6 @@
 package functional_interface;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
@@ -17,8 +18,10 @@ public class ConsumerInterface {
 
 
 
+
+
             Consumer<List> cc= c1.andThen(c2).andThen(c3);
-            cc.accept(employees);
+
 
 
         }

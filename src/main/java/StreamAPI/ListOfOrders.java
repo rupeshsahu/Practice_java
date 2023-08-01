@@ -20,7 +20,8 @@ public class ListOfOrders {
 //    //   list.stream().forEach(System.out::println);
 //         list.stream().filter(i->i%2==0).collect(Collectors.toList());
       list.stream().forEach(i-> System.out.println(i));
-        list1=list.stream().sorted((s1,s2)->s2.compareTo(s1)).collect(Collectors.toList());
+        System.out.println("this one");
+        list1=list.stream().sorted().collect(Collectors.toList());
         list1.forEach(System.out::println);
 
         System.out.println(list);

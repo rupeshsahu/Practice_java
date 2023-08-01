@@ -7,5 +7,6 @@ public class PredicateImpl {
         int i=11 ;
         Predicate<Integer> p=(j)-> {return j<10;};
         System.out.println(p.test(i));
+
     }
 }

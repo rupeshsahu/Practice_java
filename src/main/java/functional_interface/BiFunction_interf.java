@@ -28,16 +28,16 @@ public static class Employee{
 
         BiFunction<String,Integer,Employee> bf =(a,b)->new Employee(a,b);
         List<Employee> list= new ArrayList<>();
-        list.add(bf.apply("Rupesh",101));
-        list.add(bf.apply("Satish",102));
-        list.add(bf.apply("Aman",104));
-        list.add(bf.apply("Ashwani",103));
-        list.add(bf.apply("kamal",105));
+        list.add(bf.apply("Rupesh",102));
+        list.add(bf.apply("Satish",103));
+        list.add(bf.apply("Aman",105));
+        list.add(bf.apply("Ashwani",104));
+        list.add(bf.apply("kamal",101));
         list.add(bf.apply("kaka",106));
 
-        System.out.println(list);
-        Comparator<Employee> c=(a,b)->a.ename.compareTo(b.ename);
-       list= list.stream().sorted(c).collect(Collectors.toList());
+      //  System.out.println(list);
+        Comparator<Employee> c=(a,b)-> a.eno>b.eno?1:a.eno<b.eno?-1:0;
+       list= list.stream().sorted().collect(Collectors.toList());
         System.out.println(list);
 
 
