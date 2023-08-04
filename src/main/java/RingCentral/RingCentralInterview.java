@@ -7,10 +7,14 @@ public class RingCentralInterview {
      when we call sqrt(2, 0.01), it should return 1.41 with a precision of 0.01.*/
     public static void main(String[] args) {
 
+        System.out.println(sqrt(3,0.01));
+        System.out.println(0.001<0.000001);
+
 
     }
 
     public static double sqrt(double number, double precision) {
+
         if (number < 0) {
             throw new IllegalArgumentException("Square root of negative numbers is not supported.");
         }
@@ -25,7 +29,7 @@ public class RingCentralInterview {
             result = mid * mid;
 
             // Check if the result is close enough to the given number with the required precision
-            if (Math.abs(result - number) < precision) {
+            if (Math.abs(end - start) < precision) {
                 return mid;
             } else if (result < number) {
                 // If the square is less than the number, move the start pointer to the right
@@ -35,7 +39,6 @@ public class RingCentralInterview {
                 end = mid;
             }
         }
-
         return mid; // Return the current best approximation
     }
 
