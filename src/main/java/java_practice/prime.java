@@ -28,7 +28,7 @@ public class prime {
             if(n%i==0)
             {
 
-flag++;
+return false;
             }
 
         }

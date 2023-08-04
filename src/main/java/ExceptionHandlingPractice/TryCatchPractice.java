@@ -8,15 +8,12 @@ import java.util.Scanner;
 
 public class TryCatchPractice {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        int a=11;
-        int b=12;
+        int x=3;
+        int y=0;
 
+          throw new Exception("this exception is created by me");
 
-        try(Scanner sc = new Scanner(System.in)){
-
-            
-        }
     }
 }

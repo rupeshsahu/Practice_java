@@ -20,12 +20,16 @@ public class Employee implements Comparable {
         int eid1=this.id;
         Employee e=(Employee) o;
         int eid2=e.id;
-        if(eid1<eid2)
+
+        return eid1<eid2?-1:eid2>eid1?1:0;
+
+       /* if(eid1<eid2)
         {
             return -1;
         } else if (eid1>eid2) {
             return 1;
         }
-        else return 0;
+        else return 0;*/
+
     }
 }

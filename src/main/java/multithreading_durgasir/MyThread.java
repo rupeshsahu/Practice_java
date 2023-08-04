@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class MyThread {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         List list=new ArrayList<>();
         list.add(11);
@@ -18,15 +18,23 @@ public class MyThread {
 
         Runnable r=()->{
             for(int i=0;i<list.size();i++)
-            System.out.println(Thread.currentThread().getName()+"  "+list.get(i));
+            System.out.println(Thread.currentThread().getName()+"  "+i);
+
+
         };
 
         Thread thread=new Thread(r);
+        thread.setPriority(Thread.MAX_PRIORITY);
         Thread thread1=new Thread(r);
        thread.start();
        thread1.start();
+        thread.join();
+        //thread1.join();
+
+
         for(int i=0;i< list.size();i++)
-            System.out.println(Thread.currentThread().getName()+"  "+list.get(i));
+            System.out.println(Thread.currentThread().getName()+"  "+i);
+
 
     }
 }

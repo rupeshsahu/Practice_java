@@ -9,9 +9,7 @@ public class lambdaexpression {
         System.out.println(l.m1(5,3));
 
 
-
-
-
-
     }
+
+
 }

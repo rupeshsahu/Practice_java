@@ -1,0 +1,5 @@
+2023-07-30 14:16:11 INFO  Log4jimpl:14 - Hello:========
+  2023-07-30 14:16:11 WARN  Log4jimpl:15 - hellow:========
+  2023-07-30 14:16:11 ERROR Log4jimpl:16 - hiihihiih:=========
+  2023-07-30 14:16:11 FATAL Log4jimpl:17 - 23432424:==========
+  
