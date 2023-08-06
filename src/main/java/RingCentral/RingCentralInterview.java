@@ -10,7 +10,7 @@ public class RingCentralInterview {
         System.out.println(sqrt(3,0.01));
         System.out.println(countDigit(0.001));
 
-        System.out.println(3d3);
+        System.out.println();
 
        // System.out.println(0.001<0.000001);
 
@@ -43,7 +43,7 @@ public class RingCentralInterview {
                 end = mid;
             }
         }
-        String str=
+
         return mid; // Return the current best approximation
     }
 
