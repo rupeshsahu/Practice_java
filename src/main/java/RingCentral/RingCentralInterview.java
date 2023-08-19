@@ -8,7 +8,11 @@ public class RingCentralInterview {
     public static void main(String[] args) {
 
         System.out.println(sqrt(3,0.01));
-        System.out.println(0.001<0.000001);
+        System.out.println(countDigit(0.001));
+
+        System.out.println();
+
+       // System.out.println(0.001<0.000001);
 
 
     }
@@ -39,7 +43,19 @@ public class RingCentralInterview {
                 end = mid;
             }
         }
+
         return mid; // Return the current best approximation
+    }
+
+    public static int countDigit(double input){
+        double i=input;
+        int count=0;
+        while (i<1){
+            i=i*10;
+            count++;
+        }
+        return count;
+
     }
 
 }
