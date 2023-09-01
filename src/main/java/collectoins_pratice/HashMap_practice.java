@@ -14,8 +14,8 @@ public class HashMap_practice {
         l.add(4);
         l.add(5);
 
-        HashSet s=new HashSet(l);
-        System.out.println(s);
+        HashSet hs=new HashSet(l);
+        System.out.println(hs);
 
 
         HashMap<Integer,String> hm =new HashMap<Integer, String>();
@@ -50,5 +50,23 @@ public class HashMap_practice {
             Map.Entry m1=(Map.Entry)itr.next();
             System.out.println("key="+m1.getKey()+"  Value="+m1.getValue());
         }
+        System.out.println(hm.values());
+        System.out.println(hm.keySet());
+        hs.clear();
+        System.out.println(hs);
+        hs.add(null);
+        hs.add(null);
+        System.out.println(hs);
+        hm.clear();
+        hm.put(null,"abc");
+        hm.put(null,"abcd");
+        hm.put(null,null);
+        hm.put(1,"rupesh");
+        hm.put(2,"hello");
+        System.out.println(hm.get(null)+" acnnc");
+
+
+        System.out.println(hm);
+
     }
 }

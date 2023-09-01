@@ -8,11 +8,11 @@ public class OracleInterview {
         int a[]={1,6,4,2,8,5};
         sort(a);
         int result=secoundSmallest(a,2);
-        System.out.println(result);
 
         for(int i:a){
             System.out.println(i);
         }
+        System.out.println("2nd largest number is :-"+result);
     }
 
     public static int secoundSmallest(int [] arr, int n){
