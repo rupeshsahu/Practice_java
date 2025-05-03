@@ -15,12 +15,9 @@ public class ConsumerInterface {
             Consumer<List> c1 = employee -> System.out.println(e1.name + " : " + e1.number);
             Consumer<List> c2 = employee -> System.out.println(e2.name + " : " + e2.number);
             Consumer<List> c3 = employee -> System.out.println(e3.name + " : " + e3.number);
-
-
-
-
-
             Consumer<List> cc= c1.andThen(c2).andThen(c3);
+             cc.accept(employees);
+
 
 
 

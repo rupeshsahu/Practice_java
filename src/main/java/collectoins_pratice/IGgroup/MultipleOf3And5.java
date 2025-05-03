@@ -4,6 +4,9 @@ public class MultipleOf3And5 {
 
     public static void main(String[] args) {
 
+        System.out.println(sumMultiplesOf3AndFive(10));
+        System.out.println(sumMultiplesOf3And5(10));
+
 
 
     }
