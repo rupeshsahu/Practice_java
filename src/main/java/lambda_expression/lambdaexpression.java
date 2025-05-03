@@ -15,6 +15,9 @@ public class lambdaexpression {
         // Full form
         lambda l4 = (int a, int b) -> { return a + b; };
 
+
+
+
         // Output
         System.out.println(l1.m1(4, 5));
         System.out.println(l2.m1(4, 5));
